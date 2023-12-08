@@ -1,8 +1,23 @@
 {
+  "name": "obs-websocket-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gramiz/cooking-aurelien.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gramiz/cooking-aurelien/issues"
+  },
+  "homepage": "https://github.com/Gramiz/cooking-aurelien#readme",
   "dependencies": {
-    "buffer": "^6.0.3",
-    "event": "^1.0.0",
-    "http-server": "^14.1.1",
+    "express": "^4.18.2",
     "obs-websocket-js": "^5.0.3"
   }
 }

@@ -15,6 +15,7 @@ const app = express();
 const OBSWebSocket = require("obs-websocket-js");
 
 const obs = new OBSWebSocket();
+
 obs
   .connect({ address: "localhost:4444", password: "obscontroll" })
   .then(() => {

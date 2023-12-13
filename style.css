@@ -1,31 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-main{
-display: flex;
+:root{
+  --size: 100px;
 }
-.Button, .Button1, .Button2{
-    margin: 2%;
-    border-radius: 46px;
-    padding: 1%;
-    height: 16px;
-    width: 93px;
-    text-align: center;
-    font-family: Inter;
-    text-decoration: none;
+
+
+body{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--size));
+  grid-template-rows: repeat(auto-fit, var(--size));
+  grid-gap: 20px;
+}
+
+button{
+  background-color: rgb(111, 111, 104);
+  border: none;
+  color: rgb(240, 240, 255);
 
 }
-.Button{
-    border: 5px solid rgba(244, 148, 5, 0.50);
-    background: #FAFD6A;
-    color: #4481DC;
-   
+
+button:hover{
+  background-color: rgb(240, 240, 255);
+  color: rgb(111, 111, 104);
 }
-.Button1{
-    color: #FF7183;
-    border: 5px solid #5FC146;
-    background: #95FF7A;
-}
-.Button2{
-    border: 7px solid #D85ECC;
-    background: #F383E8;
-    color: #F4F847;
+
+button.active{
+  background-color: rgb(240, 240, 255);
+  color: rgb(111, 111, 104);
 }

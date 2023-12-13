@@ -12,6 +12,7 @@ async function main() {
   const data = await obs.call("GetSceneList");
   console.log(data);
 
+  // Ajout des boutons
   for (const scene of data.scenes) {
     const button = new SceneButton(obs, scene.sceneName);
     button.appendTo(document.body);
@@ -20,7 +21,25 @@ async function main() {
     }
   }
 
+  // Messagerie
+  obs.on('StreamlabsOBSChats', (data) => {
+    console.log(data);
+  });
 
+  // Bouton de start et stop du stream
+  const startStreamButton = document.createElement('button');
+  startStreamButton.textContent = 'Demarer le stream';
+  startStreamButton.addEventListener('click', async () => {
+    await obs.call('StartStream');
+  });
+  document.body.appendChild(startStreamButton);
+
+  const stopStreamButton = document.createElement('button');
+  stopStreamButton.textContent = 'Arrêter le stream';
+  stopStreamButton.addEventListener('click', async () => {
+    await obs.call('StopStream');
+  });
+  document.body.appendChild(stopStreamButton);
 }
 main();
 

@@ -15,7 +15,7 @@ export class SceneButton extends Button {
 
     appendTo(element) {
         super.appendTo(element);
-        this.obs.on('SwitchScenes', (data) => {
+        this.obs.on('CurrentProgramSceneChanged', (data) => {
             this.active(data.sceneName === this.sceneName);
         });
     }

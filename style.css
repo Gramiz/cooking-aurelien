@@ -11,7 +11,7 @@ body{
 }
 
 button{
-  background-color: rgb(111, 111, 104);
+  background-color: rgb(52, 47, 188);
   border: none;
   color: rgb(240, 240, 255);
 
@@ -23,6 +23,6 @@ button:hover{
 }
 
 button.active{
-  background-color: rgb(240, 240, 255);
+  background-color: rgb(133, 132, 175);
   color: rgb(111, 111, 104);
 }

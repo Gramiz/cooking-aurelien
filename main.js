@@ -6,7 +6,7 @@ import.meta.env.MDP;
 
 async function main() {
   const obs = new OBSWebSocket();
-  //await obs.connect(`${import.meta.env.IP}`, `${import.meta.env.MDPMDP}`);
+  //await obs.connect(`ws://localhost:4455`, `2H6Ffh1pCoBCSkno`);
   await obs.connect(`ws://localhost:4455`, `Dow2nRuJUG4TOTE8`);
   console.log(obs);
   console.log("Connecter a OBS");

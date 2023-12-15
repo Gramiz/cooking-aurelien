@@ -4,10 +4,11 @@
 
 
 body{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, var(--size));
-  grid-template-rows: repeat(auto-fit, var(--size));
-  grid-gap: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 button{

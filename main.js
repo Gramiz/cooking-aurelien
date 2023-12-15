@@ -1,12 +1,12 @@
 import { SceneButton } from './SceneButton';
 import './style.css';
-
 import OBSWebSocket from 'obs-websocket-js';
 console.log("Debut du programme");
+import.meta.env.MDP;
 
 async function main() {
   const obs = new OBSWebSocket();
-  await obs.connect('ws://localhost:4455', '2H6Ffh1pCoBCSkno');
+  await obs.connect(`${import.meta.env.IP}`, `${import.meta.env.MDPMDP}`);
   console.log(obs);
   console.log("Connecter a OBS");
   const data = await obs.call("GetSceneList");

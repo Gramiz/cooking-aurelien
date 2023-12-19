@@ -11,19 +11,26 @@ body{
   width: 100vw;
 }
 
-button{
-  background-color: rgb(52, 47, 188);
-  border: none;
-  color: rgb(240, 240, 255);
-
-}
-
-button:hover{
-  background-color: rgb(240, 240, 255);
-  color: rgb(111, 111, 104);
-}
-
-button.active{
-  background-color: rgb(133, 132, 175);
-  color: rgb(111, 111, 104);
-}
+  .buttonStart, .buttonStop, .buttonScene, .button3, .button4, .button5{
+      margin: 2%;
+      border-radius: 46px;
+      padding: 1%;
+     display: flex;
+  }
+  .buttonStop{
+      border: 7px solid #D85ECC;
+      border: 5px solid #D85ECC;
+      background: #F383E8;
+      color: #F4F847;
+  }
+  .buttonScene{
+      border: 5px solid rgba(244, 148, 5, 0.50);
+      background: #FAFD6A;
+      color: #4481DC;
+     
+  }
+  .buttonStart{
+      color: #FAFD6A;
+      border: 5px solid #5FC146;
+      background: #95FF7A;
+  }

@@ -28,14 +28,16 @@ async function main() {
   });
 
   // Bouton de start et stop du stream
-  const startStreamButton = document.createElement('button');
+  const startStreamButton = document.createElement('Button');
+  startStreamButton.classList.add('buttonStart');
   startStreamButton.textContent = 'Demarer le stream';
   startStreamButton.addEventListener('click', async () => {
     await obs.call('StartStream');
   });
   document.body.appendChild(startStreamButton);
 
-  const stopStreamButton = document.createElement('button');
+  const stopStreamButton = document.createElement('Button');
+  stopStreamButton.classList.add('buttonStop');
   stopStreamButton.textContent = 'Arrêter le stream';
   stopStreamButton.addEventListener('click', async () => {
     await obs.call('StopStream');

@@ -9,6 +9,7 @@ export class Button {
 
     appendTo(element){
         this.button = document.createElement('button');
+        this.button.classList.add('buttonScene');
         this.button.innerText = this.label;
         this.button.addEventListener('click', this.onClick.bind(this));
         element.appendChild(this.button);

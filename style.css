@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
 :root{
   --size: 100px;
 }
@@ -11,7 +12,9 @@ body{
   width: 100vw;
 }
 
-  .buttonStart, .buttonStop, .buttonScene, .button3, .button4, .button5{
+  .buttonStart, .buttonStop, .buttonScene{
+    font-family: 'Rubik Maps', sans-serif;
+    font-size: 1.5rem;
       margin: 2%;
       border-radius: 46px;
       padding: 1%;
@@ -25,12 +28,21 @@ body{
   }
   .buttonScene{
       border: 5px solid rgba(244, 148, 5, 0.50);
+      padding-left: 2%;
+      padding-right: 2%;
       background: #FAFD6A;
-      color: #4481DC;
+      color: #F383E8;
      
   }
   .buttonStart{
-      color: #FAFD6A;
+      color: #4481DC;
       border: 5px solid #5FC146;
       background: #95FF7A;
+  }
+  .active{
+     opacity: 0.6;
+  }
+  
+  .buttonStart:hover, .buttonStop:hover, .buttonScene:hover{
+      opacity: 0.7;
   }

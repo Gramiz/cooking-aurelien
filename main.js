@@ -30,10 +30,11 @@ async function main() {
   // Bouton de start et stop du stream
   const startStreamButton = document.createElement('Button');
   startStreamButton.classList.add('buttonStart');
-  startStreamButton.textContent = 'Demarer le stream';
+  startStreamButton.textContent = 'Démarer le stream';
   startStreamButton.addEventListener('click', async () => {
     await obs.call('StartStream');
   });
+  
   document.body.appendChild(startStreamButton);
 
   const stopStreamButton = document.createElement('Button');
